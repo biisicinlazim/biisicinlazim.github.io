@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Company Information
-company_name: Johns, Smith & Associates
+company_name: Bi'iş İçin Lazım
 address_line: Via Ludovisi 39-45, Rome, 54267, Italy
 telephone_number: 1.800.245.356
 fax_number: 1.800.245.357
