@@ -403,7 +403,7 @@ $(document).ready(function($) {
 // On SCROLL actions
 
     $(window).on("scroll", function(){
-        if ( $(window).scrollTop() > $(window).height() ) {
+        if ( $(window).scrollTop() > $(window).height() - 0.75 * $(window).height()) {
             $(".navbar").addClass("in");
         }
         else {
@@ -427,7 +427,7 @@ function doneResizing(){
 // Set Hero height
 
 function heroHeight(){
-    $(".ts-full-screen").height( $(window).height() );
+    $(".ts-full-screen").height( $(window).height());
 }
 
 // Smooth Scroll
@@ -443,7 +443,7 @@ $(".ts-scroll").on("click", function(event) {
         if (target.length) {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top 
             }, 1000, function() {
                 var $target = $(target);
                 $target.focus();
@@ -467,26 +467,4 @@ function getScrollBarWidth () {
         widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
     $outer.remove();
     return 100 - widthWithScroll;
-}
-
-function simpleMap(latitude, longitude, markerImage, mapStyle, mapElement, markerDrag){
-    if (!markerDrag){
-        markerDrag = false;
-    }
-    var mapCenter = new google.maps.LatLng(latitude,longitude);
-    var mapOptions = {
-        zoom: 13,
-        center: mapCenter,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        styles: mapStyle
-    };
-    var element = document.getElementById(mapElement);
-    var map = new google.maps.Map(element, mapOptions);
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(latitude,longitude),
-        map: map,
-        icon: markerImage,
-        draggable: markerDrag
-    });
 }
