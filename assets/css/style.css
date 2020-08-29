@@ -2270,7 +2270,7 @@ E. Template Specific Elements
     }
 
     .ts-block {
-        padding-bottom: 8.125rem;
+        padding-bottom: 0rem;
         padding-top: 8.125rem;
     }
 
@@ -2307,7 +2307,7 @@ E. Template Specific Elements
     }
 
     .ts-block[data-mask-bottom-nw-color], .ts-block[data-mask-bottom-wn-color] {
-        padding-bottom: 12rem;
+        padding-bottom: 0rem;
     }
 }
 
@@ -2325,7 +2325,7 @@ E. Template Specific Elements
     }
 
     .ts-title {
-        margin-bottom: 1.875rem;
+        margin-bottom: 0rem;
     }
 
     .ts-promo-numbers h2 {
@@ -2343,7 +2343,7 @@ E. Template Specific Elements
     }
 
     .ts-title {
-        margin-bottom: 3.125rem;
+        margin-bottom: 0rem;
     }
 
     .ts-block-inside {
@@ -2357,7 +2357,7 @@ E. Template Specific Elements
     }
 
     .ts-title {
-        margin-bottom: 3.75rem;
+        margin-bottom: 0rem;
     }
 
     .ts-block-inside {
